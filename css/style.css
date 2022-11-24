@@ -1,5 +1,6 @@
 :root {
-    --black: #000000;
+    --black: #030408;
+    --black2: #05080F;
     --oxford-blue: #14213d;
     --orange-web: #fca311;
     --platinum: #e5e5e5;
@@ -13,29 +14,53 @@
     border: none;
     background: none;
     color: var(--white);
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--black);
+    background-color: var(--black2);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 header {
-    position: sticky;
+    position: fixed;
+    display: flex;
     top: 0px;
-    height: 80px;
+    height: 60px;
     width: 100%;
-    background-color: #14213d;
     z-index: 10;
+    padding: 10px;
 }
 
 main {
-    position: relative;
-    top: 0px;
-    z-index: 5;
-    bottom: 500px;
-    right: 0px;
-    left: 0px;
+    margin-top: 60px;
+    height: 100%;
+    width: 100%;
     background-color: red;
+}
+
+option {
+    color: var(--black);
+}
+
+#headerBox {
+    flex: 5;
+}
+
+#configBox {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 10px;
+}
+
+#langSelect {
+    margin: 10px;
+    flex: 1;
+}
+
+#switchBox {
+    padding: 10px;
+    flex: 1;
 }
