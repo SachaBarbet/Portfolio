@@ -88,11 +88,17 @@ nav ul li {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    border-right: solid 4px var(--black2);
+    border-right: solid 6px var(--black2);
     padding-right: 10px;
+    color: var(--white);
 }
 
 nav ul li:hover {
     transition: 0.3s;
     border-right: solid 2px var(--orange-web);
+}
+
+nav ul li:active {
+    transition: 0.1s;
+    color: var(--orange-web);
 }

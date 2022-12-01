@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
     <head>
-<?php include 'templates/head.html'?>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="assets/images/icon.png">
+
+        <script src="../javascript/functions.js"></script>
+        <script src="../javascript/getSections.js"></script>
+        <noscript>Votre navigateur ne supporte pas Javascript</noscript>
+
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/index.css">
+        
         <title>Barbet Sacha</title>
     </head>
 
@@ -27,9 +38,9 @@
         <main>
             <nav>
                 <ul class="center">
-                    <li>ACCUEIL</li>
-                    <li>FORMATIONS</li>
-                    <li>CARRIÈRE</li>
+                    <li onclick="getSection('main');">ACCUEIL</li>
+                    <li onclick="getSection('formation');">FORMATIONS</li>
+                    <li onclick="getSection('career');">CARRIÈRE</li>
                     <li>PROJETS</li>
                     <li>ME CONTACTER</li>
                 </ul>
