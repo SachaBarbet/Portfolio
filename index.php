@@ -26,12 +26,19 @@
 
         <main>
             <nav>
-
+                <ul class="center">
+                    <li>ACCUEIL</li>
+                    <li>FORMATIONS</li>
+                    <li>CARRIÈRE</li>
+                    <li>PROJETS</li>
+                    <li>ME CONTACTER</li>
+                </ul>
+                <a href="authors.php">CGU</a>
             </nav>
-            
-            <div id="contentBox">
+
+            <div id="contentBox" class="center">
                 <section id="sectionMain">
-                
+                    <h1>Bienvenue sur le portfolio de Barbet Sacha</h1>
                 </section>
             </div>
         </main>

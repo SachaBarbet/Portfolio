@@ -1,5 +1,10 @@
-#sectionMain {
-    position: relative;
-    top: 0px;
-    bottom: 10px;
+main {
+    display: flex;
+}
+
+#contentBox {
+    position: fixed;
+    height: 100%;
+    width: 80%;
+    margin-left: 20%;
 }

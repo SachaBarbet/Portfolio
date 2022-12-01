@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --black: #030408;
     --black2: #05080F;
@@ -15,6 +17,7 @@
     background: none;
     color: var(--white);
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -34,11 +37,10 @@ header {
     justify-content: flex-end;
 }
 
-main {
-    margin-top: 60px;
-    height: 100%;
-    width: 100%;
-    background-color: red;
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 option {
@@ -58,5 +60,39 @@ option {
 
 #themeBox {
     padding: 10px;
+    margin-right: 50px;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
     flex: 1;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    width: 100%;
+    text-align: end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-right: solid 4px var(--black2);
+    padding-right: 10px;
+}
+
+nav ul li:hover {
+    transition: 0.3s;
+    border-right: solid 2px var(--orange-web);
 }
