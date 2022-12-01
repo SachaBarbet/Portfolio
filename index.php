@@ -15,6 +15,7 @@
                     <option value="en">EN</option>
                 </select>
             </div>
+
             <div id="themeBox">
                 <label>
                     <input type="checkbox">
@@ -24,9 +25,15 @@
 		</header>
 
         <main>
-            <section id="sectionMain">
+            <nav>
+
+            </nav>
+            
+            <div id="contentBox">
+                <section id="sectionMain">
                 
-            </section>
+                </section>
+            </div>
         </main>
 
         <footer>

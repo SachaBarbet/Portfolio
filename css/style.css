@@ -31,6 +31,7 @@ header {
     width: 100%;
     z-index: 10;
     padding: 10px;
+    justify-content: flex-end;
 }
 
 main {
@@ -44,13 +45,8 @@ option {
     color: var(--black);
 }
 
-#headerBox {
-    flex: 5;
-}
-
-#configBox {
+#langBox {
     display: flex;
-    flex: 1;
     align-items: center;
     padding: 10px;
 }
@@ -60,7 +56,7 @@ option {
     flex: 1;
 }
 
-#switchBox {
+#themeBox {
     padding: 10px;
     flex: 1;
 }
