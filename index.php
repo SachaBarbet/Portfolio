@@ -7,22 +7,30 @@
     </head>
 
     <body>
-<?php include 'templates/header.html'?>
+        
+        <header>
+            <div id="langBox">
+                <select name="langSelect" id="langSelect">
+                    <option value="fr" selected>FR</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+            <div id="themeBox">
+                <label>
+                    <input type="checkbox">
+                    <span id="switchSlider"></span>
+                </label>
+            </div>
+		</header>
 
         <main>
             <section id="sectionMain">
                 
             </section>
-
-            <section id="sectionProfesionnal">
-
-            </section>
-
-            <section id="sectionPersonnal">
-
-            </section>
         </main>
 
-<?php include 'templates/footer.html'?>
+        <footer>
+            
+        </footer>
     </body>
 </html>
