@@ -8,7 +8,6 @@
         <link rel="icon" href="assets/images/icon.png">
 
         <script src="../javascript/functions.js"></script>
-        <script src="../javascript/getSections.js"></script>
         <noscript>Votre navigateur ne supporte pas Javascript</noscript>
 
         <link rel="stylesheet" href="css/style.css">
@@ -38,18 +37,19 @@
         <main>
             <nav>
                 <ul class="center">
-                    <li onclick="getSection('main');">ACCUEIL</li>
-                    <li onclick="getSection('formation');">FORMATIONS</li>
-                    <li onclick="getSection('career');">CARRIÈRE</li>
-                    <li>PROJETS</li>
-                    <li>ME CONTACTER</li>
+                    <li id="linkMain" class="link" onclick="getSection('main');">ACCUEIL</li>
+                    <li id="linkFormations" class="link" onclick="getSection('formations');">FORMATIONS</li>
+                    <li id="linkCareer" class="link" onclick="getSection('career');">CARRIÈRE</li>
+                    <li id="linkProjects" class="link" onclick="getSection('projects');">PROJETS</li>
+                    <li id="linkContact" class="link" onclick="getSection('contact');">ME CONTACTER</li>
                 </ul>
-                <a href="authors.php">CGU</a>
+                <a href="authors.html">CGU</a>
             </nav>
 
             <div id="contentBox" class="center">
                 <section id="sectionMain">
                     <h1>Bienvenue sur le portfolio de Barbet Sacha</h1>
+                    <button onClick="buttonClick('contact');" >CONTACTEZ-MOI</button>
                 </section>
             </div>
         </main>
