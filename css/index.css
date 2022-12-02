@@ -12,3 +12,24 @@ main {
 #sectionMain h1 {
     font-size: xx-large;
 }
+
+#sectionMain {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#buttonContact {
+    padding: 15px 10px;
+    transition: 0.2s;
+    background-color: var(--orange-web);
+    border: solid var(--orange-web) 3px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#buttonContact:hover {
+    transition: 0.2s;
+    background-color: var(--black2);
+    color: var(--orange-web);
+}

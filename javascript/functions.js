@@ -30,3 +30,7 @@ async function getSection(section) {
 
     switchSection(section, sectionID);
 }
+
+function buttonClick(buttonName) {
+    getSection(buttonName);
+}
