@@ -1,9 +1,9 @@
 :root {
-    --black: #030408;
-    --black2: #05080F;
-    --oxford-blue: #14213d;
-    --orange-web: #ff9e00;
-    --orange-bis: #bf7700;
-    --platinum: #e5e5e5;
-    --white: #ffffff;
+    --color-main: #e5e5e5;
+    --color-main2: #ffffff;
+    --color-main3: #14213d;
+    --color-orange: #ff9e00;
+    --color-orange2: #bf7700;
+    --color-secondary: #030408;
+    --color-secondary2: #05080F;
 }

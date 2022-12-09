@@ -1,17 +1,17 @@
-const sections = ["main", "career", "formations", "projects", "contact"];
+const sections = ["main", "formations", "career", "projects", "contact"];
 
-function switchSection(section, secCap) {
+function switchSection(secCap) {
 
     const listList = document.getElementsByClassName("link");
     const sectionList = document.getElementsByTagName("section");
 
-    for(let i = 0; i < sectionList.length; i++) {
+    for(let i = 0; i < sectionList.length++; i++) {
         sectionList[i].style.display = "none";
-        listList[i].style.color = "#ffffff";
+        listList[i].style.color = "var(--color-secondary)";
     }
 
     document.getElementById(`section${secCap}`).style.display = "flex";
-    document.getElementById(`link${secCap}`).style.color = "#fca311";
+    document.getElementById(`link${secCap}`).style.color = "var(--color-orange)";
 }
 
 async function getSection(section) {
@@ -27,7 +27,7 @@ async function getSection(section) {
         document.getElementById("contentBox").innerHTML = contentBox + fetchText;
     }
 
-    switchSection(section, secCap);
+    switchSection(secCap);
 }
 
 function buttonClick(buttonName) {

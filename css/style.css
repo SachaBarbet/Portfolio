@@ -86,7 +86,7 @@ nav ul li {
     transition: 0.3s;
     border-right: solid 5px var(--color-main2);
     padding-right: 10px;
-    color: var(--white);
+    color: var(--color-secondary);
 }
 
 nav ul li:hover, nav ul li:focus {
