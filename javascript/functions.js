@@ -5,7 +5,7 @@ function switchSection(secCap) {
     const listList = document.getElementsByClassName("link");
     const sectionList = document.getElementsByTagName("section");
 
-    for(let i = 0; i < sectionList.length++; i++) {
+    for(let i = 0; i < sectionList.length; i++) {
         sectionList[i].style.display = "none";
         listList[i].style.color = "var(--color-secondary)";
     }

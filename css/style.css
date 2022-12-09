@@ -9,8 +9,8 @@
     color: var(--color-secondary);
     box-sizing: border-box;
     font-family: "JetBrains Mono",monospace;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
 }
 
 body {
@@ -39,6 +39,7 @@ header {
 
 option {
     color: var(--color-main2);
+    cursor: pointer;
 }
 
 #langBox {
@@ -51,11 +52,16 @@ option {
     margin: 10px;
     flex: 1;
     font-size: medium;
+    cursor: pointer;
 }
 
 #themeBox {
     padding: 10px;
     margin-right: 50px;
+}
+
+#themeBox input {
+    cursor: pointer;
 }
 
 nav {
@@ -96,7 +102,7 @@ nav ul li:hover, nav ul li:focus {
 
 nav ul li:active {
     transition: 0.1s;
-    color: var(--color-orange);
+    color: var(--color-orangebis);
 }
 
 h2 {
