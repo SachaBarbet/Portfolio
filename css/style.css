@@ -1,27 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root {
-    --black: #030408;
-    --black2: #05080F;
-    --oxford-blue: #14213d;
-    --orange-web: #fca311;
-    --platinum: #e5e5e5;
-    --white: #ffffff;
-}
-
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     border: none;
     background: none;
-    color: var(--white);
+    color: var(--color-secondary);
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "JetBrains Mono",monospace;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 body {
-    background-color: var(--black2);
+    background: var(--color-main2);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -45,7 +38,7 @@ header {
 }
 
 option {
-    color: var(--black);
+    color: var(--color-main2);
 }
 
 #langBox {
@@ -91,22 +84,21 @@ nav ul li {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    border-right: solid 6px var(--black2);
+    border-right: solid 5px var(--color-main2);
     padding-right: 10px;
     color: var(--white);
-    user-select: none;
 }
 
-nav ul li:hover {
+nav ul li:hover, nav ul li:focus {
     transition: 0.3s;
-    border-right: solid 2px var(--orange-web);
+    border-right: solid 2px var(--color-orange);
 }
 
 nav ul li:active {
     transition: 0.1s;
-    color: var(--orange-web);
+    color: var(--color-orange);
 }
 
-#linkMain {
-    color: var(--orange-web);
+h2 {
+    text-transform: capitalize;
 }
