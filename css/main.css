@@ -1,12 +1,5 @@
-main {
-    display: flex;
-}
-
-#contentBox {
-    position: fixed;
-    height: 100%;
-    width: 80%;
-    margin-left: 20%;
+#linkMain {
+    color: var(--color-orange);
 }
 
 #sectionMain h1 {
@@ -14,12 +7,6 @@ main {
     margin-bottom: 1.5rem;
     line-height: 150%;
     text-align: center;
-}
-
-#sectionMain {
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
 }
 
 #buttonContact {

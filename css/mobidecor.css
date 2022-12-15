@@ -1,0 +1,18 @@
+nav a {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+img {
+    width: 5%;
+}
+
+#sectionLogo {
+    justify-content: flex-start;
+}
+
+
+#sectionLogo img {
+    margin: 50px;
+    width: 30%;
+}

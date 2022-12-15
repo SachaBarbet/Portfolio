@@ -10,7 +10,7 @@
         <script src="../javascript/functions.js"></script>
         <noscript>Votre navigateur ne supporte pas Javascript</noscript>
 
-        <link rel="stylesheet" href="css/colors/black.css">
+        <link rel="stylesheet" id="colorRel" href="css/colors/black.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/career.css">
@@ -23,7 +23,8 @@
 
     <body>
         
-        <header>
+        <header class="center flexend">
+            <a href="./assets/doc/CV_BARBET_SACHA.txt">CV</a>
             <div id="langBox">
                 <select title="Select the langage" name="langSelect" id="langSelect">
                     <option value="fr" selected>FR</option>
@@ -33,20 +34,20 @@
 
             <div id="themeBox">
                 <label>
-                    <input title="Select the color template" type="checkbox">
+                    <input title="Select the color template" type="checkbox" id="themeSwitchInput" onclick="isTemplateBoxCheck = true; changeTheme();">
                     <span id="switchSlider"></span>
                 </label>
             </div>
 		</header>
 
         <main>
-            <nav>
+            <nav class="center">
                 <ul class="center">
-                    <li id="linkMain" class="link" onclick="getSection('main');">ACCUEIL</li>
-                    <li id="linkFormations" class="link" onclick="getSection('formations');">FORMATIONS</li>
-                    <li id="linkCareer" class="link" onclick="getSection('career');">CARRIÈRE</li>
-                    <li id="linkProjects" class="link" onclick="getSection('projects');">PROJETS</li>
-                    <li id="linkContact" class="link" onclick="getSection('contact');">ME CONTACTER</li>
+                    <li id="linkMain" class="link" onclick="switchSection('main');">ACCUEIL</li>
+                    <li id="linkFormations" class="link" onclick="switchSection('formations');">FORMATIONS</li>
+                    <li id="linkCareer" class="link" onclick="switchSection('career');">CARRIÈRE</li>
+                    <li id="linkProjects" class="link" onclick="switchSection('projects');">PROJETS</li>
+                    <li id="linkContact" class="link" onclick="switchSection('contact');">ME CONTACTER</li>
                 </ul>
                 <a href="authors.html">CGU</a>
             </nav>
@@ -57,7 +58,57 @@
                     <p>Bonjour, je suis Sacha, un étudiant de 19 ans actuellement en BTS SIO.<br>
                         Ici, vous pouvez retrouver de multiples informations me concernant.<br>
                         Je vous invite à faire un petit tour et le constaté pour vous même.</p>
-                    <button onclick="buttonClick('contact');" id="buttonContact" >CONTACTEZ-MOI</button>
+                    <button onclick="switchSection('contact');" id="buttonContact" >CONTACTEZ-MOI</button>
+                </section>
+
+                <section id="sectionFormations" class="center">
+                    <h2>formations</h2>
+                    <div class="center">
+                        <div class="timeline">
+                            <ul>
+                                <li>2021</li>
+                                <li>2022</li>
+                                <li>2023</li>
+                            </ul>
+                        </div>
+
+                        <ul>
+                            <li>BAC (Mathématiques, Sciences de l'ingénieur) 2021</li>
+                            <li>BTS SIO SLAM</li>
+                            <li>Openclassroom</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="sectionCareer" class="center">
+                    <h2>carrière</h2>
+                    <div class="center">
+                        <div class="timeline">
+                            <ul>
+                                <li>2021</li>
+                                <li>2022</li>
+                                <li>2023</li>
+                            </ul>
+                        </div>
+                        
+                        <ul>
+                            <li><a href="./mobidecor.html">Mobidecor - Alternant Technicien Informatique</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="sectionProjects" class="center">
+                    <h2>projets</h2>
+                </section>
+
+                <section id="sectionContact" class="center">
+                    <h2>contactez-moi !</h2>
+                    <form action="php/contactEmail.php" method="post" class="center">
+                        <input type="email" name="email" placeholder="Votre adresse mail">
+                        <input type="text" name="object" placeholder="Objet du mail">
+                        <input type="text" name="content" placeholder="Contenu de votre mail">
+                        <input type="submit" value="Envoyer">
+                    </form>
                 </section>
             </div>
         </main>

@@ -1,35 +1,31 @@
 const sections = ["main", "formations", "career", "projects", "contact"];
+const sectionsBis = ["enterprise", "task", "project"];
+var isTemplateBoxChecked = false;
 
-function switchSection(secCap) {
-
-    const listList = document.getElementsByClassName("link");
-    const sectionList = document.getElementsByTagName("section");
-
-    for(let i = 0; i < sectionList.length; i++) {
-        sectionList[i].style.display = "none";
-        listList[i].style.color = "var(--color-secondary)";
-    }
-
-    document.getElementById(`section${secCap}`).style.display = "flex";
-    document.getElementById(`link${secCap}`).style.color = "var(--color-orange)";
-}
-
-async function getSection(section) {
+function switchSection(section) {
 
     const secCap = section[0].toUpperCase() + section.slice(1);
 
-    if(document.getElementById(`section${secCap}`) === null && section !== "main") {
-
-        const fetchTable = await fetch(`./templates/${section}.html`);
-        const fetchText = await fetchTable.text();
-    
-        const contentBox = document.getElementById("contentBox").innerHTML;
-        document.getElementById("contentBox").innerHTML = contentBox + fetchText;
+    const listList = document.getElementsByClassName("link");
+    for(let i = 0; i < listList.length; i++) {
+        listList[i].style.color = "var(--color-secondary)";
     }
 
-    switchSection(secCap);
+    const sectionList = document.getElementsByTagName("section");
+    for(let i = 0; i < sectionList.length; i++) {
+        sectionList[i].style.display = "none";
+    }
+
+    document.getElementById(`link${secCap}`).style.color = "var(--color-orange)";
+    document.getElementById(`section${secCap}`).style.display = "flex";
 }
 
-function buttonClick(buttonName) {
-    getSection(buttonName);
+function changeTheme() {
+    const colorRel = document.getElementById("colorRel");
+    isTemplateBoxChecked = !isTemplateBoxChecked;
+    if (isTemplateBoxChecked) {
+        colorRel.setAttribute("href", "css/colors/white.css");
+    } else {
+        colorRel.setAttribute("href", "css/colors/black.css");
+    }
 }
