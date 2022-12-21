@@ -16,3 +16,64 @@ img {
     margin: 50px;
     width: 30%;
 }
+
+#sectionEnterprise {
+    justify-content: space-around;
+}
+
+#sectionEnterprise h1 {
+    font-size: xx-large;
+}
+
+#intro {
+    font-size: x-large;
+    flex-direction: row;
+    border-bottom: var(--color-secondary) solid 1px;
+    padding-bottom: 2%;
+}
+
+#intro p, #infra ul {
+    width: 50%;
+    margin: 5%;
+    text-align: start;
+}
+
+#intro img {
+    width: 20%;
+}
+
+#infra {
+    flex-direction: row-reverse;
+    border-bottom: var(--color-secondary) solid 1px;
+    padding-bottom: 2%;
+}
+
+#infra ul li {
+    font-size: x-large;
+    text-align: end;
+}
+
+#infra img {
+    width: 50%;
+}
+
+#partner {
+    flex-direction: row;
+    padding-bottom: 2%;
+}
+
+#partner ul li {
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+#partner ul li img {
+    width: 33%;
+    margin-bottom: 5%;
+}
+
+#partner p {
+    font-size: large;
+}
+
