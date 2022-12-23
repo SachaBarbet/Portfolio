@@ -105,6 +105,10 @@ nav ul li:active {
     color: var(--color-orange2);
 }
 
+.linkSelected {
+    color: var(--color-orange);
+}
+
 #contentBox {
     position: fixed;
     height: 500%;
