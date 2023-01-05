@@ -7,15 +7,15 @@ function switchSection(sectionName) {
     const sectionList = document.getElementsByTagName("section");
 
     for(let i = 0; i < listList.length; i++) {
-        listList[i].style.color = "var(--color-secondary)";
+        listList[i].classList.remove("linkSelected");
     }
 
     for(let i = 0; i < sectionList.length; i++) {
-        sectionList[i].style.display = "none";
+        sectionList[i].classList.add("none");
     }
 
-    document.getElementById(`link${sectionName}`).style.color = "var(--color-orange)";
-    document.getElementById(`section${sectionName}`).style.display = "flex";
+    document.getElementById(`link${sectionName}`).classList.add("linkSelected");
+    document.getElementById(`section${sectionName}`).classList.remove("none");
 }
 
 function changeTheme() {
