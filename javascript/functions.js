@@ -28,3 +28,15 @@ function changeTheme() {
         colorRel.setAttribute("href", "css/colors/black.css");
     }
 }
+
+async function getJson(file) {
+    const data = await fetch(file).then(data => data.json());
+    return data;
+}
+
+function generateTimeline(timeline) {
+    const data = getJson(`../assets/json/${timeline}.json`);
+
+    console.log(data)
+    return
+}

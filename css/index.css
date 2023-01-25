@@ -5,6 +5,7 @@
     margin-bottom: 1.5rem;
     line-height: 150%;
     text-align: center;
+    color: var(--color-orange);
 }
 
 #sectionMain p {

@@ -167,3 +167,11 @@ section div {
 section h2 {
     justify-self: flex-start;
 }
+
+.link-btn {
+    padding: 0.5%;
+    margin: 0.2%;
+    border: solid 3px var(--color-orange);
+    border-radius: 3px;
+}
+
