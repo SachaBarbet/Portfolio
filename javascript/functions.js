@@ -29,14 +29,11 @@ function changeTheme() {
     }
 }
 
-async function getJson(file) {
-    const data = await fetch(file).then(data => data.json());
-    return data;
-}
-
-function generateTimeline(timeline) {
-    const data = getJson(`../assets/json/${timeline}.json`);
-
-    console.log(data)
+async function generateTimeline(timeline) {
+    const data = await fetch(`../assets/json/${timeline}.json`).then(data => data.json());
+    for (let index = 0; index < data.length; index++) {
+        const element = array[index];
+        
+    }
     return
 }

@@ -1,0 +1,4 @@
+Modification du plan du site
+    Sur une seul section timeline avec parcours pédagogique et pro (meilleurs compréhension et lisibilité)
+    Ajout d'une section compétence (pouvoir mettre en lien avec les projets ou expérience pro/pédagogique)
+    
