@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="icon" href="assets/images/icon.png">
-
         <script src="../javascript/functions.js"></script>
         <noscript>Votre navigateur ne supporte pas Javascript</noscript>
+
+        <link rel="icon" href="assets/images/icon.png">
 
         <link rel="stylesheet" id="colorRel" href="css/colors/black.css">
         <link rel="stylesheet" href="css/style.css">
@@ -20,7 +20,7 @@
     <body>
         
         <header class="center flexend">
-            <a href="./assets/doc/CV_BARBET_SACHA.txt" class="link-strong">Curriculum Vitae</a>
+            <a href="./assets/doc/Curriculum Vitae - Barbet Sacha.pdf" target="_blank" rel="noopener noreferrer" class="link-strong">Curriculum Vitae</a>
             <div id="langBox">
                 <select title="Select the langage" name="langSelect" id="langSelect">
                     <option value="fr" selected>FR</option>
@@ -38,14 +38,18 @@
 
         <main>
             <nav class="center">
+                <div id="media-icons" class="center">
+                    <a href="https://www.linkedin.com/in/sacha-barbet-8b6ab6219/" target="_blank" rel="noopener noreferrer"><img src="./assets/images/linkedin_bleu.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/SachaBarbet" target="_blank" rel="noopener noreferrer"><img src="./assets/images/github_white.png" alt="Github"></a>
+                    <a href="mailto:sacha.barbet@gmail.com" target="_blank" rel="noopener noreferrer"><img src="./assets/images/gmail.png" alt="Mail"></a>
+                </div>
                 <ul class="center">
                     <li id="linkMain" class="link linkSelected" onclick="switchSection('Main');">ACCUEIL</li>
                     <li id="linkFormations" class="link" onclick="switchSection('Formations');">FORMATIONS</li>
                     <li id="linkCareer" class="link" onclick="switchSection('Career');">CARRIÈRE</li>
                     <li id="linkProjects" class="link" onclick="switchSection('Projects');">PROJETS</li>
-                    <li id="linkContact" class="link" onclick="switchSection('Contact');">ME CONTACTER</li>
                 </ul>
-                <a href="authors.html">CGU</a>
+                <a href="authors.html" id="CGU">CGU</a>
             </nav>
 
             <div id="contentBox" class="center">
@@ -54,51 +58,19 @@
                     <p>Bonjour, je suis Sacha, un étudiant de 19 ans actuellement en BTS SIO.<br>
                         Ici, vous pouvez retrouver de multiples informations me concernant.<br>
                         Je vous invite à faire un petit tour et le constaté pour vous même.</p>
-                    <button onclick="switchSection('Contact');" id="buttonContact" >CONTACTEZ-MOI</button>
+                    <a href="mailto:sacha.barbet@gmail.com" id="buttonContact" target="_blank" rel="noopener noreferrer">CONTACTEZ-MOI</a>
                 </section>
 
                 <section id="sectionFormations" class="center">
-                    <h2>formations</h2>
-                    <div class="center">
-                        <div class="timeline">
-                            <ul>
-                                <li>2021</li>
-                                <li>2022</li>
-                                <li>2023</li>
-                            </ul>
-                        </div>
-
-                        <ul>
-                            <li>BAC (Mathématiques, Sciences de l'ingénieur) 2021</li>
-                            <li>BTS SIO SLAM</li>
-                            <li>Openclassroom</li>
-                        </ul>
-                    </div>
+                    <h2>Formations</h2>
                 </section>
 
                 <section id="sectionCareer" class="center">
                     <h2>Carrière</h2>
-                    <div class="timeline">
-                    </div>
                 </section>
 
                 <section id="sectionProjects" class="center">
-                    <h2>projets</h2>
-                </section>
-
-                <section id="sectionContact" class="center">
-                    <h2>Contactez-moi !</h2>
-                    <form action="php/contactEmail.php" method="post" class="center">
-                        <input type="email" name="email" placeholder="Votre adresse mail">
-                        <input type="text" name="object" placeholder="Objet du mail">
-                        <input type="text" name="content" placeholder="Contenu de votre mail">
-                        <input type="submit" value="Envoyer">
-                    </form>
-                    <ul class="center">
-                        <li><a href="https://www.linkedin.com/in/sacha-barbet-8b6ab6219/"><img src="" alt="LinkedIn"></a></li>
-                        <li><a href="https://github.com/SachaBarbet"><img src="" alt="Github"></a></li>
-                        <li><a href=""><img src="" alt=""></a></li>
-                    </ul>
+                    <h2>Projets</h2>
                 </section>
             </div>
         </main>

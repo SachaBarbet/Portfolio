@@ -141,23 +141,6 @@ h2 {
     text-transform: capitalize;
 }
 
-.timeline {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2px;
-    border-bottom: var(--color-secondary) solid 2px;
-    padding: 5px;
-}
-
-.timeline ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 section div {
     width: 80%;
     margin: 2% 0px;
@@ -175,3 +158,15 @@ section h2 {
     border-radius: 3px;
 }
 
+#media-icons {
+    padding-right: 1rem;
+}
+
+#media-icons a{
+    margin: 1em;
+}
+
+#media-icons img {
+    height: 24px;
+    width: 24px;
+}

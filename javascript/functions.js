@@ -1,4 +1,4 @@
-const sections = ["Main", "Formations", "Career", "Projects", "Contact"];
+const sections = ["Main", "Formations", "Career", "Projects"];
 var isTemplateBoxChecked = false;
 
 function switchSection(sectionName) {
