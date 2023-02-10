@@ -12,6 +12,7 @@
     -webkit-user-select: none;
     user-select: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 html {
@@ -69,25 +70,23 @@ option {
     cursor: pointer;
 }
 
-#langBox {
-    display: flex;
-    align-items: center;
+#box-lang {
     padding: 10px;
 }
 
-#langSelect {
+#select-lang {
     margin: 10px;
     flex: 1;
     font-size: medium;
     cursor: pointer;
 }
 
-#themeBox {
+#box-theme {
     padding: 10px;
     margin-right: 50px;
 }
 
-#themeBox input {
+#box-theme input {
     cursor: pointer;
 }
 
@@ -117,31 +116,36 @@ nav ul {
     flex-direction: column;
 }
 
-nav ul li {
+.link-li {
     width: 100%;
-    text-align: end;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 7%;
     margin: 5px;
-    font-weight: bold;
     cursor: pointer;
-    transition: 0.2s;
-    border-right: solid 5px var(--color-main2);
-    padding-right: 10px;
-    color: var(--color-secondary);
+    text-align: end;
 }
 
-nav ul li:hover, nav ul li:focus {
+.link {
+    width: 100%;
+    padding: 10px 0px;
+    padding-right: 10px;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    
+    transition: 0.2s;
+    border-right: solid 5px var(--color-main2);
+}
+
+.link:hover, .link:focus {
     transition: 0.2s;
     border-right: solid 2px var(--color-orange);
 }
 
-nav ul li:active {
+.link:active {
     transition: 0.1s;
     color: var(--color-orange2);
 }
 
-.linkSelected {
+.link-selected {
     color: var(--color-orange);
 }
 
@@ -150,14 +154,14 @@ main {
     height: 100%;
 }
 
-#contentBox {
+#box-content {
     position: relative;
     height: 400%;
     width: 82.5%;
     margin-left: 17.5%;
 }
 
-#contentBox section {
+#box-content section {
     width: 100%;
     height: 25%;
     flex-direction: column;

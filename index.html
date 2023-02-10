@@ -8,9 +8,9 @@
         <script src="../javascript/functions.js"></script>
         <noscript>Votre navigateur ne supporte pas Javascript</noscript>
 
-        <link rel="icon" href="assets/images/icon.png">
-
-        <link rel="stylesheet" id="colorRel" href="css/colors/black.css">
+        <link rel="icon" href="assets/images/icon.png">        
+        
+        <link rel="stylesheet" id="rel-color" href="css/colors/black.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/index.css">
         
@@ -28,17 +28,17 @@
 
             <div class="center header-div flexend">
                 <a href="./assets/doc/Curriculum Vitae - Barbet Sacha.pdf" target="_blank" rel="noopener noreferrer" class="link-strong">Curriculum Vitae</a>
-                <div id="langBox">
-                    <select title="Select the langage" name="langSelect" id="langSelect">
+                <div id="box-lang" class="center">
+                    <select title="Select the langage" name="selectLang" id="select-lang">
                         <option value="fr" selected>FR</option>
                         <option value="en">EN</option>
                     </select>
                 </div>
 
-                <div id="themeBox">
+                <div id="box-theme">
                     <label>
                         <input title="Select the color template" type="checkbox" id="themeSwitchInput" onclick="isTemplateBoxCheck = true; changeTheme();">
-                        <span id="switchSlider"></span>
+                        <span id="switch-slider"></span>
                     </label>
                 </div>
             </div>
@@ -47,32 +47,47 @@
         <main>
             <nav class="center">
                 <ul class="center">
-                    <li id="linkMain" class="link linkSelected">ACCUEIL</li>
-                    <li id="linkFormations" class="link">FORMATIONS</li>
-                    <li id="linkCareer" class="link">CARRIÈRE</li>
-                    <li id="linkProjects" class="link">PROJETS</li>
+                    <li class="link-li"><a href="#section-main" id="link-main" class="link link-selected" onclick="linkClicked('main');">ACCUEIL</a></li>
+                    <li class="link-li"><a href="#section-parcours" id="link-parcours" class="link" onclick="linkClicked('parcours');">PARCOURS</a></li>
+                    <li class="link-li"><a href="#section-skills" id="link-skills" class="link" onclick="linkClicked('skills');">Compétences</a></li>
+                    <li class="link-li"><a href="#section-projects" id="link-projects" class="link" onclick="linkClicked('projects');">PROJETS</a></li>
                 </ul>
-                <a href="authors.html" id="CGU">CGU</a>
+                <a href="authors.html" id="link-CGU">CGU</a>
             </nav>
 
-            <div id="contentBox">
-                <section id="sectionMain" class="center">
+            <div id="box-content">
+                <section id="section-main" class="center">
                     <h1>BARBET SACHA</h1>
                     <p>Bonjour, je suis Sacha, un étudiant de 19 ans actuellement en BTS SIO.<br>
                         Ici, vous pouvez retrouver de multiples informations me concernant.<br>
                         Je vous invite à faire un petit tour et le constaté par vous même.</p>
-                    <a href="mailto:sacha.barbet@gmail.com" id="buttonContact" target="_blank" rel="noopener noreferrer">CONTACTEZ-MOI</a>
+                    <a href="mailto:sacha.barbet@gmail.com" id="button-contact" target="_blank" rel="noopener noreferrer">CONTACTEZ-MOI</a>
                 </section>
 
-                <section id="sectionFormations" class="center">
-                    <h2>Formations</h2>
+                <section id="section-parcours" class="center">
+                    <h2>Parcours</h2>
+                    <div id="timeline">
+                        <div class="timeline-row">
+                            <div class="timeline-icon">
+                                <span class="timeline-badge"></span>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-item-header">
+
+                                </div>
+                                <div class="timeline-item-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
-                <section id="sectionCareer" class="center">
-                    <h2>Carrière</h2>
+                <section id="section-skills" class="center">
+                    <h2>Compétences</h2>
                 </section>
 
-                <section id="sectionProjects" class="center">
+                <section id="section-projects" class="center">
                     <h2>Projets</h2>
                 </section>
             </div>

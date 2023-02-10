@@ -1,5 +1,5 @@
 
-#sectionMain h1 {
+#section-main h1 {
     font-size: 300%;
     margin-bottom: 1.5rem;
     line-height: 150%;
@@ -7,14 +7,14 @@
     color: var(--color-orange);
 }
 
-#sectionMain p {
+#section-main p {
     padding: 1% 10%;
     font-size: 110%;
     text-align: center;
     margin-bottom: 20px;
 }
 
-#buttonContact {
+#button-contact {
     padding: 15px 10px;
     transition: 0.2s;
     background-color: var(--color-orange);
@@ -29,23 +29,23 @@
     box-shadow: var(--color-orange2) 2px 4px 0px;
 }
 
-#buttonContact:hover, #buttonContact:focus {
+#button-contact:hover, #button-contact:focus {
     transform: translateY(-3px);
     transform: translateX(-1px);
     box-shadow: var(--color-orange2) 3px 6px 1px;
 }
 
-#buttonContact:active {
+#button-contact:active {
     transform: translateY(3px);
     transform: translateX(1px);
     box-shadow: var(--color-orange2) 2px 2px 0px;
     opacity: 0.7;
 }
 
-#sectionContact form {
+#section-contact form {
     flex-direction: column;
 }
 
-#CGU {
+#link-CGU {
     margin: 1rem;
 }

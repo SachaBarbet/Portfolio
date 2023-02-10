@@ -1,18 +1,23 @@
+
 var isTemplateBoxChecked = false;
 
 function changeTheme() {
-    const colorRel = document.getElementById("colorRel");
+    const colorRel = document.getElementById("rel-color");
     isTemplateBoxChecked = !isTemplateBoxChecked;
     
     if (isTemplateBoxChecked) return colorRel.setAttribute("href", "css/colors/white.css");
     return colorRel.setAttribute("href", "css/colors/black.css");
 }
 
-async function generateTimeline(timeline) {
-    const data = await fetch(`../assets/json/${timeline}.json`).then(data => data.json());
-    for (let index = 0; index < data.length; index++) {
-        const element = array[index];
-        
+async function generateProjects() {
+    console.log("projects")
+}
+
+function linkClicked(id) {
+    const links = document.getElementsByClassName("link");
+    for (let index = 0; index < links.length; index++) {
+        const element = links[index];
+        element.setAttribute("class", "link");
     }
-    return
+    document.getElementById(`link-${id}`).setAttribute("class", "link link-selected");
 }
