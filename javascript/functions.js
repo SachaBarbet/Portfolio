@@ -9,10 +9,6 @@ function changeTheme() {
     return colorRel.setAttribute("href", "css/colors/black.css");
 }
 
-async function generateProjects() {
-    console.log("projects")
-}
-
 function linkClicked(id) {
     const links = document.getElementsByClassName("link");
     for (let index = 0; index < links.length; index++) {

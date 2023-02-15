@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 
 * {
     margin: 0;
@@ -15,7 +15,8 @@
     box-sizing: border-box;
 }
 
-html {
+html, body, main {
+    width: 100%;
     height: 100%;
 }
 
@@ -23,7 +24,6 @@ body {
     background: var(--color-main2);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100%;
 }
 
 .center {
@@ -57,8 +57,8 @@ header {
     width: 100%;
     padding: 10px;
     padding-right: 50px;
-    background-color: var(--color-main2);
     justify-content: space-between;
+    background-color: var(--color-main2);
 }
 
 .header-div {
@@ -130,9 +130,9 @@ nav ul {
     padding-right: 10px;
     color: var(--color-secondary);
     text-transform: uppercase;
-    
     transition: 0.2s;
-    border-right: solid 5px var(--color-main2);
+    border-right: solid 5px rgba(1, 1, 1, 0);
+    font-weight: 700;
 }
 
 .link:hover, .link:focus {
@@ -149,11 +149,6 @@ nav ul {
     color: var(--color-orange);
 }
 
-main {
-    width: 100%;
-    height: 100%;
-}
-
 #box-content {
     position: relative;
     height: 400%;
@@ -167,10 +162,6 @@ main {
     flex-direction: column;
 }
 
-h2 {
-    text-transform: capitalize;
-}
-
 section div {
     width: 80%;
     margin: 2% 0px;
@@ -178,6 +169,7 @@ section div {
 }
 
 section h2 {
+    text-transform: capitalize;
     justify-self: flex-start;
 }
 
@@ -199,4 +191,13 @@ section h2 {
 .link-strong:hover {
     transition: 0.2s;
     border-bottom: 1px solid var(--color-orange);
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: var(--color-main2);
+    max-height: 60px;
+    min-height: 40px;
 }
