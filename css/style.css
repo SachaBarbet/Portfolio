@@ -163,7 +163,6 @@ nav ul {
 }
 
 section div {
-    width: 80%;
     margin: 2% 0px;
     flex-direction: column;
 }
@@ -171,6 +170,8 @@ section div {
 section h2 {
     text-transform: capitalize;
     justify-self: flex-start;
+    font-size: 1.4em;
+    letter-spacing: 1.5px;
 }
 
 .link-btn {

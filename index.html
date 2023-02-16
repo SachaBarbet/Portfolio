@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="../javascript/functions.js"></script>
+        <script src="javascript/functions.js"></script>
         <noscript>Votre navigateur ne supporte pas Javascript</noscript>
 
         <link rel="icon" href="assets/images/icon.png">        
@@ -48,7 +48,7 @@
             <nav class="center">
                 <ul class="center">
                     <li class="link-li"><a href="#section-main" id="link-main" class="link link-selected" onclick="linkClicked('main');">ACCUEIL</a></li>
-                    <li class="link-li"><a href="#section-parcours" id="link-parcours" class="link" onclick="linkClicked('parcours');">PARCOURS</a></li>
+                    <li class="link-li"><a href="#title-parcours" id="link-parcours" class="link" onclick="linkClicked('parcours');">PARCOURS</a></li>
                     <li class="link-li"><a href="#section-skills" id="link-skills" class="link" onclick="linkClicked('skills');">Compétences</a></li>
                     <li class="link-li"><a href="#section-projects" id="link-projects" class="link" onclick="linkClicked('projects');">PROJETS</a></li>
                 </ul>
@@ -56,53 +56,50 @@
 
             <div id="box-content">
                 <section id="section-main" class="center">
-                    <h1>BARBET SACHA</h1>
-                    <p>Bonjour, je suis Sacha, un étudiant de 19 ans actuellement en BTS SIO.<br>
-                        Ici, vous pouvez retrouver de multiples informations me concernant.<br>
-                        Je vous invite à faire un petit tour et le constaté par vous même.</p>
-                    <a href="mailto:sacha.barbet@gmail.com" id="button-contact" target="_blank" rel="noopener noreferrer">CONTACTEZ-MOI</a>
+                    <div id="box-main">
+                        <div id="box-blob">
+                            <svg viewBox="0 0 230 230" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#FF9E00" d="M70.1,-37.2C83,-18,80.3,13.4,66,37.2C51.8,61,25.9,77.2,0.1,77.1C-25.7,77.1,-51.4,60.8,-61.5,39.4C-71.6,18.1,-66,-8.4,-53.1,-27.5C-40.3,-46.7,-20.1,-58.4,4.2,-60.9C28.6,-63.3,57.1,-56.4,70.1,-37.2Z" transform="translate(100 100)" />
+                            </svg>
+                            <svg viewBox="0 0 230 230" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#070C16" d="M53.9,-29.5C66.5,-9.4,70.8,17,60.5,37C50.1,57.1,25.1,70.8,-1.4,71.6C-27.9,72.4,-55.9,60.4,-70.1,38.1C-84.3,15.8,-84.9,-16.7,-70.9,-37.6C-56.9,-58.5,-28.5,-67.7,-3.9,-65.5C20.7,-63.2,41.4,-49.5,53.9,-29.5Z" transform="translate(100 100)" />
+                            </svg>
+                            <img src="assets/images/profile-nobg.png" alt="Profile Img">
+                        </div>
+                        <div id="profile-content">
+                            <h1>BARBET SACHA</h1>
+                            <p>Bonjour, je suis Sacha, un étudiant de 19 ans actuellement en BTS SIO.<br>
+                                Ici, vous pouvez retrouver de multiples informations me concernant.<br>
+                                Je vous invite à faire un petit tour et le constaté par vous même.</p>
+                            <a href="mailto:sacha.barbet@gmail.com" id="button-contact" target="_blank" rel="noopener noreferrer">CONTACTEZ-MOI</a>
+                        </div>
+                    </div>
+                    
                 </section>
 
                 <section id="section-parcours" class="center">
-                    <h2>Parcours</h2>
-                    <div id="timeline">
-                        <div class="timeline-row">
-                            <div class="timeline-icon">
-                                <p class="timeline-badge">Aujourd'hui</p>
+                    <h2 id="title-parcours">Parcours</h2>
+                    <ul class="timeline">
+                        <li class="timeline-row" data-date="Aujourd'hui">
+                            <div class="timeline-item">
+                                <h3>Mobidecor</h3>
+                                <p>Gestion de projet (Vidéo Surveillance) - Automation de tâche Via (Via ERP, Python et langages systèmes)</p>
+                                <h5>Mobidecor Mâcon | 2 ans</h5>
                             </div>
                             <div class="timeline-item">
-                                <div class="timeline-item-header">
-                                    <h3>BTS</h3>
-                                </div>
-                                <div class="timeline-item-body">
-                                    
-                                </div>
+                                <h3>BTS Services Informatiques aux Organisations</h3>
+                                <p>Option SLAM : Solutions logicielles et applications métiers</p>
+                                <h5>Dijon Formation - Dijon | 2 ans</h5>
                             </div>
+                        </li>
+                        <li class="timeline-row" data-date="2018-2021">
                             <div class="timeline-item">
-                                <div class="timeline-item-header">
-                                    <h3>Mobidecor</h3>
-                                </div>
-                                <div class="timeline-item-body">
-                                    
-                                </div>
+                                <h3>Baccalauréat</h3>
+                                <p>Spécialités : Mathématiques - Science de l'ingénieur</p>
+                                <h5>Lycée René Cassin - Mâcon | 3ans</h5>
                             </div>
-                        </div>
-                        <div class="timeline-row">
-                            <div class="timeline-icon">
-                                <p class="timeline-badge">2018-
-                                    2021</p>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-item-header">
-                                    <h3>Baccalauréat</h3>
-                                </div>
-                                <div class="timeline-item-body">
-                                    <p></p>
-                                    <p>Diplôme obtenu le </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </section>
 
                 <section id="section-skills" class="center">
