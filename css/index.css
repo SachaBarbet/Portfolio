@@ -8,7 +8,7 @@
 #profile-content {
     display: flex;
     align-items: flex-start;
-    width: 66%;
+    width: 55%;
     height: 100%;
     margin-left: 10%;
 }
@@ -34,16 +34,15 @@
 
 #box-blob svg {
     position: absolute;
-    height: 33%;
-    width: 33%;
+    height: 367px;
+    width: 367px;
 }
 
 #box-blob img {
     position: absolute;
-    width: 17.5%;
+    width: 195px;
     border-radius: 40%;
-    transform: translate(100 100);
-    margin-bottom: 1.4%;
+    margin-bottom: 1.35%;
     margin-right: 5%;
 }
 
@@ -73,6 +72,14 @@
     transform: translateX(1px);
     box-shadow: var(--color-orange2) 2px 2px 0px;
     opacity: 0.7;
+}
+
+#section-parcours {
+    margin-bottom: 15%;
+}
+
+#title-parcours {
+    padding-top: 10%;
 }
 
 .timeline {
@@ -136,10 +143,19 @@
 
 .timeline-item * {
     font-weight: 400;
+    padding: 10px;
 }
 
 .timeline-item * {
     font-weight: 400;
+}
+
+.timeline-item p {
+    color: var(--color-secondary3);
+}
+
+.timeline-item h5 {
+    color: var(--color-secondary4);
 }
 
 #link-CGU {
