@@ -47,24 +47,24 @@
 }
 
 #button-contact {
-    padding: 15px 10px;
+    padding: 15px;
     transition: 0.2s;
     background-color: var(--color-orange);
     border-style: none;
-    border-radius: 4px;
+    border-radius: 2px;
     color: var(--color-main2);
     font-weight: 700;
     font-size: medium;
     opacity: 1;
     cursor: pointer;
     touch-action: manipulation;
-    box-shadow: var(--color-orange2) 2px 4px 0px;
+    box-shadow: var(--color-orange2) 4px 4px 0px;
 }
 
 #button-contact:hover, #button-contact:focus {
     transform: translateY(-3px);
     transform: translateX(-1px);
-    box-shadow: var(--color-orange2) 3px 6px 1px;
+    box-shadow: var(--color-orange2) 6px 6px 0px;
 }
 
 #button-contact:active {
@@ -74,11 +74,7 @@
     opacity: 0.7;
 }
 
-#section-parcours {
-    margin-bottom: 15%;
-}
-
-#title-parcours {
+#bind-parcours {
     padding-top: 10%;
 }
 
@@ -158,17 +154,16 @@
     color: var(--color-secondary4);
 }
 
-#link-CGU {
+#link-DA {
     margin: 1rem;
-    padding: 10px;
-    margin-left: 7.5%;
+    padding: 8px;
+    margin-left: 4%;
     transition: 0.2s;
     border-bottom: 1px solid rgba(1, 1, 1, 0);
-    border-radius: 0px;
+    font-size: small;
 }
 
-#link-CGU:hover {
+#link-DA:hover {
     transition: 0.2s;
     border-bottom: 1px solid var(--color-secondary);
-    border-radius: 1px;
 }

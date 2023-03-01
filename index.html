@@ -42,7 +42,8 @@
             <nav class="center">
                 <ul class="center">
                     <li class="link-li"><a href="#section-main" id="link-main" class="link link-selected" onclick="linkClicked('main');">ACCUEIL</a></li>
-                    <li class="link-li"><a href="#title-parcours" id="link-parcours" class="link" onclick="linkClicked('parcours');">PARCOURS</a></li>
+                    <li class="link-li"><a href="#section-profile" id="link-profile" class="link" onclick="linkClicked('profile');">PROFIL</a></li>
+                    <li class="link-li"><a href="#bind-parcours" id="link-parcours" class="link" onclick="linkClicked('parcours');">PARCOURS</a></li>
                     <li class="link-li"><a href="#section-projects" id="link-projects" class="link" onclick="linkClicked('projects');">PROJETS</a></li>
                 </ul>
             </nav>
@@ -71,13 +72,19 @@
 
                 <div class="box-separator"></div>
 
+                <section id="section-profile" class="center">
+                    <h1>Mon Profil</h1>
+                </section>
+
+                <div class="box-separator"></div>
+
                 <section id="section-parcours" class="center">
-                    <h2 id="title-parcours">Mon Parcours</h2>
+                    <h2 id="bind-parcours">Mon Parcours</h2>
                     <ul class="timeline">
                         <li class="timeline-row" data-date="2021-2023">
                             <div class="timeline-item">
-                                <h3>Mobidecor</h3>
-                                <p>Gestion de projet (Vidéo Surveillance) et<br>Automatisation de tâche (Via ERP, Python et langages systèmes)</p>
+                                <h3>Technicien Informatique</h3>
+                                <p>Gestion de projet (Vidéo Surveillance)<br>Automatisation de tâche (Via ERP, Python et langages systèmes)</p>
                                 <h5>Mobidecor Mâcon | 2 ans</h5>
                             </div>
                             <div class="timeline-item">
@@ -90,7 +97,7 @@
                             <div class="timeline-item">
                                 <h3>Baccalauréat</h3>
                                 <p>Spécialités : Mathématiques - Science de l'ingénieur</p>
-                                <h5>Lycée René Cassin - Mâcon | 3ans</h5>
+                                <h5>Lycée René Cassin - Mâcon | 3 ans</h5>
                             </div>
                         </li>
                     </ul>
@@ -101,14 +108,26 @@
                 <section id="section-projects" class="center">
                     <h2>Mes Projets</h2>
                     <ul id="list-projects">
-                        <li></li>
-                        <li></li>
+                        <li>
+                            <h3>Mon Porfolio</h3>
+                            <p>
+                                Vous êtes actuellement dessus, c'est l'un de mes premiers véritables projets que je souhaite partager.
+                                Il m'a permis de monter mes compétences en développement web.
+                            </p>
+                            <h5>Contexte : Projet personnel - BTS SIO</h5>
+                            <a class="link-project" href="https://github.com/SachaBarbet/Portfolio">GITHUB</a>
+                        </li>
+                        <li>
+                            <h3>MOBP</h3>
+                            <p>Ce projet a été réalisé avec le framework Flutter</p>
+                            <a class="link-project" href="">GITHUB</a>
+                        </li>
                     </ul>
                 </section>
             </div>
         </main>
         <footer>
-            <a href="authors.html" id="link-CGU">CGU</a>
+            <a href="authors.html" id="link-DA">Droits d'auteur</a>
         </footer>
         <script src="javascript/events.js"></script>
     </body>
