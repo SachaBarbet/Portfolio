@@ -4,7 +4,7 @@ function runOnScroll(element) {
 };
   
   // grab elements as array, rather than as NodeList
-  const element = document.querySelector(`#box-content`);
+const element = document.querySelector(`#box-content`);
   
   // and then make each element do something on scroll
 window.addEventListener(
