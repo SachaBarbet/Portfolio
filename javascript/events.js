@@ -1,14 +1,16 @@
-function runOnScroll(element) {
-    // not the most exciting thing, but a thing nonetheless
-    console.log(element.scrollHeight);
+function runOnScroll(elements) {
+    for (let index = 0; index < elements.length; index++) {
+        const element = elements[index];
+        const rect = element.getBoundingClientRect();
+        if (rect.y < 250) {
+            linkClicked(element.getAttribute("id").split('-')[1]);
+        }
+    }
 };
   
-  // grab elements as array, rather than as NodeList
-const element = document.querySelector(`#box-content`);
-  
-  // and then make each element do something on scroll
+const childElements = document.getElementsByTagName("section");
+
 window.addEventListener(
     "scroll",
-    () => runOnScroll(element),
-    { passive: true }
+    () => runOnScroll(childElements)
 );

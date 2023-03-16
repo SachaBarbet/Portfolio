@@ -1,0 +1,15 @@
+#section-projects {
+    padding: 2%;
+}
+
+#section-projects h2 {
+    margin-bottom: 35%;
+}
+
+#list-projects li {
+    position: absolute;
+    background-color: var(--color-main3);
+    height: 60%;
+    width: 40%;
+    margin-bottom: 33%;
+}

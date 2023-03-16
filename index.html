@@ -11,10 +11,13 @@
         <link rel="icon" href="assets/images/icon.png">        
         
         <link rel="stylesheet" id="rel-color" href="css/colors/black.css">
+        <link rel="stylesheet" href="css/section-main.css">
+        <link rel="stylesheet" href="css/section-profile.css">
+        <link rel="stylesheet" href="css/section-career.css">
+        <link rel="stylesheet" href="css/section-projects.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/index.css">
         
-        <title>Barbet Sacha</title>
+        <title>Sacha Barbet</title>
     </head>
 
     <body>
@@ -43,30 +46,21 @@
                 <ul class="center">
                     <li class="link-li"><a href="#section-main" id="link-main" class="link link-selected" onclick="linkClicked('main');">ACCUEIL</a></li>
                     <li class="link-li"><a href="#section-profile" id="link-profile" class="link" onclick="linkClicked('profile');">PROFIL</a></li>
-                    <li class="link-li"><a href="#bind-parcours" id="link-parcours" class="link" onclick="linkClicked('parcours');">PARCOURS</a></li>
+                    <li class="link-li"><a href="#bind-career" id="link-career" class="link" onclick="linkClicked('career');">PARCOURS</a></li>
                     <li class="link-li"><a href="#section-projects" id="link-projects" class="link" onclick="linkClicked('projects');">PROJETS</a></li>
                 </ul>
             </nav>
 
             <div id="box-content">
+
+                <div id="background"></div>
+
                 <section id="section-main" class="center">
-                    <div id="box-main">
-                        <div id="box-blob">
-                            <svg viewBox="0 0 230 230" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#FF9E00" d="M70.1,-37.2C83,-18,80.3,13.4,66,37.2C51.8,61,25.9,77.2,0.1,77.1C-25.7,77.1,-51.4,60.8,-61.5,39.4C-71.6,18.1,-66,-8.4,-53.1,-27.5C-40.3,-46.7,-20.1,-58.4,4.2,-60.9C28.6,-63.3,57.1,-56.4,70.1,-37.2Z" transform="translate(100 100)" />
-                            </svg>
-                            <svg viewBox="0 0 230 230" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#070C16" d="M53.9,-29.5C66.5,-9.4,70.8,17,60.5,37C50.1,57.1,25.1,70.8,-1.4,71.6C-27.9,72.4,-55.9,60.4,-70.1,38.1C-84.3,15.8,-84.9,-16.7,-70.9,-37.6C-56.9,-58.5,-28.5,-67.7,-3.9,-65.5C20.7,-63.2,41.4,-49.5,53.9,-29.5Z" transform="translate(100 100)" />
-                            </svg>
-                            <img src="assets/images/profile-nobg.png" alt="Profile Img">
-                        </div>
-                        <div id="profile-content">
-                            <h1>Sacha Barbet</h1>
-                            <p>Bonjour, je suis Sacha, un étudiant de 19 ans passionné d'informatique et des nouvelles technologies.<br>
-                                Ici, vous pouvez retrouver de multiples informations me concernant.<br>
-                                Comme mon statut actuel ainsi que mon expérience que vous pouvez constater dans la section parcours ou alors mes compétences et ma détermination à travers les projets que j'ai réalisé.</p>
-                            <a href="mailto:sacha.barbet@gmail.com" id="button-contact" target="_blank" rel="noopener noreferrer">CONTACTEZ-MOI</a>
-                        </div>
+                    <div id="profile-content">
+                        <h4>Bonjour,</h4>
+                        <h1>Je m'appelle <strong>Sacha Barbet</strong></h1>
+                        <h5>Je suis actuellement étudiant en BTS Services Informatiques aux Organisations option SLAM.</h5>
+                        <a href="mailto:sacha.barbet@gmail.com" id="button-contact" target="_blank" rel="noopener noreferrer">CONTACTEZ-MOI</a>
                     </div>
                 </section>
 
@@ -74,12 +68,17 @@
 
                 <section id="section-profile" class="center">
                     <h1>Mon Profil</h1>
+                    <p>Bonjour, je suis Sacha, un étudiant de 19 ans passionné d'informatique et des nouvelles technologies.<br>
+                        Ici, vous pouvez retrouver de multiples informations me concernant.<br>
+                        Comme mon statut actuel ainsi que mon expérience que vous pouvez constater dans la section parcours ou alors mes compétences et ma détermination à travers les projets que j'ai réalisé.
+                    </p>
+
                 </section>
 
                 <div class="box-separator"></div>
 
-                <section id="section-parcours" class="center">
-                    <h2 id="bind-parcours">Mon Parcours</h2>
+                <section id="section-career" class="center">
+                    <h2 id="bind-career">Mon Parcours</h2>
                     <ul class="timeline">
                         <li class="timeline-row" data-date="2021-2023">
                             <div class="timeline-item">
@@ -107,7 +106,7 @@
 
                 <section id="section-projects" class="center">
                     <h2>Mes Projets</h2>
-                    <ul id="list-projects">
+                    <ul id="list-projects" class="center">
                         <li>
                             <h3>Mon Porfolio</h3>
                             <p>
@@ -120,6 +119,7 @@
                         <li>
                             <h3>MOBP</h3>
                             <p>Ce projet a été réalisé avec le framework Flutter</p>
+                            <h5>Contexte : BTS SIO</h5>
                             <a class="link-project" href="">GITHUB</a>
                         </li>
                     </ul>
@@ -130,5 +130,6 @@
             <a href="authors.html" id="link-DA">Droits d'auteur</a>
         </footer>
         <script src="javascript/events.js"></script>
+        <script src="javascript/animations.js"></script>
     </body>
 </html>

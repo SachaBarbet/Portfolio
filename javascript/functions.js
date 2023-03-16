@@ -2,7 +2,7 @@
 var isTemplateBoxChecked = false;
 
 function changeTheme() {
-    const colorRel = document.getElementById("rel-color");
+    const colorRel = document.getElementById("rel-color").getAt;
     isTemplateBoxChecked = !isTemplateBoxChecked;
     
     if (isTemplateBoxChecked) return colorRel.setAttribute("href", "css/colors/white.css");
