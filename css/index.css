@@ -1,0 +1,22 @@
+/*
+Composants de la page Index
+*/
+@import 'style.css';
+@import 'index/header.css';
+@import 'index/nav.css';
+@import 'index/main.css';
+
+/*
+Body
+*/
+
+:root {
+    --header-height: 60px;
+    --nav-width: 15%;
+}
+
+body {
+    height: 400%;
+    width: 100%;
+    background-color: var(--color-background);
+}

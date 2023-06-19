@@ -1,0 +1,69 @@
+/*
+Header
+*/
+header {
+    position: fixed;
+    display: flex;
+    top: 0px;
+    width: 100%;
+    height: var(--header-height);
+    justify-content: space-between;
+    background-color: var(--color-main-01);
+    z-index: 5;
+}
+
+header div {
+    flex: 1;
+    text-align: center;
+}
+
+#header-buttons a {
+    display: flex;
+    align-items: center;
+    color: var(--color-font);
+    border-bottom: solid 1px var(--color-main-01);
+    padding-right: 6px;
+    cursor: pointer;
+}
+
+#header-buttons a:hover  {
+    color: var(--color-secondary);
+    border-bottom: solid 1px var(--color-secondary);
+}
+
+#header-buttons span {
+    color: var(--color-font);
+    margin: 6px;
+}
+
+#header-buttons a:hover span  {
+    color: var(--color-secondary);
+}
+
+#box-theme {
+    padding: 10px;
+    margin-right: 50px;
+}
+
+#box-theme input {
+    cursor: pointer;
+}
+
+#media-icons {
+    padding-right: 1rem;
+}
+
+#media-icons a {
+    margin: 0px 1em;
+    height: 24px;
+    width: 24px;
+}
+
+#media-icons a img {
+    height: 24px;
+    width: 24px;
+}
+
+#icon-github {
+    filter: var(--filter);
+}
