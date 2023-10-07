@@ -16,7 +16,7 @@
 <body>
     <header>
         <div id="media-icons" class="center flex-start">
-            <a href="https://www.linkedin.com/in/sacha-barbet-8b6ab6219/" target="_blank" rel="noopener noreferrer"><img src="./assets/images/linkedin_bleu.png" alt="LinkedIn"></a>
+            <a href="https://www.linkedin.com/in/sacha-barbet/" target="_blank" rel="noopener noreferrer"><img src="./assets/images/linkedin_bleu.png" alt="LinkedIn"></a>
             <a href="https://github.com/SachaBarbet" target="_blank" rel="noopener noreferrer"><img src="./assets/images/github.png" alt="Github" id="icon-github"></a>
             <a href="mailto:sacha.barbet@gmail.com" target="_blank" rel="noopener noreferrer"><img src="./assets/images/gmail.png" alt="Mail" /></a>
         </div>
@@ -34,9 +34,9 @@
     <nav>
         <div></div>
         <ul>
-            <li><a href="#" class="link" id="link-profile">ACCUEIL</a></li>
-            <li><a href="#section-experience" class="link" id="link-experience">MON PARCOURS</a></li>
-            <li><a href="#section-projects" class="link" id="link-projects">MES PROJETS</a></li>
+            <li><a href="#" class="link" id="link-profile" onclick="linkClicked('profile');">ACCUEIL</a></li>
+            <li><a href="#section-experience" class="link" id="link-experience" onclick="linkClicked('experience');">MON PARCOURS</a></li>
+            <li><a href="#project-title" class="link" id="link-projects" onclick="linkClicked('projects');">MES PROJETS</a></li>
         </ul>
         <div></div>
     </nav>
@@ -57,11 +57,12 @@
             </p>
         </section>
 
-        <div class="horizontal-separator"></div>
+        <div class="horizontal-separator"><div></div></div>
 
         <section id="section-experience" class="center">
             <h1>MON PARCOURS</h1>
-            <div>
+
+            <div id="experience">
                 <article>
                     <h2>Parcours professionnel</h2>
                     <ul>
@@ -104,11 +105,88 @@
             </div>
         </section>
 
-        <div class="horizontal-separator"></div>
+        <div class="horizontal-separator"><div></div></div>
 
         <section id="section-projects" class="center">
-            <h1>MES PROJETS</h1>
-            
+            <h1 id="project-title">MES PROJETS</h1>
+            <ul>
+                <li>
+                    <div>
+                        <img src="assets/images/shaped_profil.png" alt="web icon" class="project-icon">
+                        <h2>Portfolio</h2>
+                    </div>
+                    <p>Vous y êtes actuellement! Il y a un début à tout et ce portfolio m'a permit de commencer le développement web.</p>
+                    <h3>Technologies : HTML / CSS / JS</h3>
+                    <h4>Contexte : Réaliser au cours de ma formation en BTS SIO</h4>
+                    <h5><a href="https://github.com/SachaBarbet/Portfolio">Lien vers le projet</a></h5>
+                </li>
+
+                <li>
+                    <div>
+                        <img src="assets/images/loanit.png" alt="web icon" class="project-icon">
+                        <h2>LoanIT</h2>
+                    </div>
+                    <p>Le premier projet réaliser en BTS SIO pour l'examen étant aussi le projet avec lequel j'ai appris le PHP.</p>
+                    <h3>Technologies : HTML / CSS / JS / PHP / SQLite / SQL</h3>
+                    <h4>Contexte : Réaliser au cours de ma formation en BTS SIO</h4>
+                    <h5><a href="https://github.com/SachaBarbet/LoanIT">Lien vers le projet</a></h5>
+                </li>
+
+                <li>
+                    <div>
+                        <img src="assets/images/shaped_conquest.png" alt="robot icon" class="project-icon">
+                        <h2>Celestial Conquest</h2>
+                    </div>
+                    <p>Etant curieux sur le fonctionnement des bots sur Discord, j'ai souhaité en réaliser un. J'ai donc commencé à le développé, ce dernier a pour but d'occuper les personnes qui attendant leurs amis.</p>
+                    <h3>Technologies : JS / NodeJS / Discord API / SQLite</h3>
+                    <h4>Contexte : Initiative personnelle</h4>
+                    <h5><a href="https://github.com/SachaBarbet/CelestialConquest">Lien vers le projet</a></h5>
+                </li>
+
+                <li>
+                    <div>
+                        <img src="assets/images/app.png" alt="app icon" class="project-icon color-icon">
+                        <h2>MOBP</h2>
+                    </div>
+                    <p>Le second projet que j'ai réalisé pour l'examen du BTS SIO. Il ma permit de gagner en expérience en POO et aussi d'apprendre le flutter et découvrir Firebase.</p>
+                    <h3>Technologies : Dart / Flutter / Firebase</h3>
+                    <h4>Contexte : Réaliser au cours de ma formation en BTS SIO</h4>
+                    <h5><a href="https://github.com/SachaBarbet/MOBP">Lien vers le projet</a></h5>
+                </li>
+
+                <li>
+                    <div>
+                        <img src="assets/images/soundsphere.png" alt="app icon" class="project-icon">
+                        <h2>SoundSphere</h2>
+                    </div>
+                    <p>Projet actuellement en cours de réalisation, réalisé pour le hackaton 2023/2024 à Ynov.</p>
+                    <h3>Technologies : Dart / Flutter / Firebase</h3>
+                    <h4>Contexte : Réaliser au cours de ma formation en Bachelor Informatique</h4>
+                    <h5><a href="http://soundsphere.gcristini.fr/">Lien vers le projet</a></h5>
+                </li>
+
+                <li>
+                    <div>
+                        <img src="assets/images/plugin.png" alt="plugin icon" class="project-icon color-icon">
+                        <h2>Space Discover</h2>
+                    </div>
+                    <p>Souhaitant rajouter du contenu à un jeux vidéo populaire, je me suis lancer dans le développement d'une extension pour celui-ci.</p>
+                    <h3>Technologies : Java / Forge API</h3>
+                    <h4>Contexte : Initiative personnelle</h4>
+                    <h5><a href="https://github.com/SachaBarbet/SpaceDiscover">Lien vers le projet</a></h5>
+                </li>
+
+                <li>
+                    <div>
+                        <img src="assets/images/game.png" alt="game icon" class="project-icon color-icon">
+                        <h2>Hateful Madness</h2>
+                    </div>
+                    <p>Dans l'optique de consolider nos compétences, un camarade et moi même avons décidé de développer un jeux vidéo en Java. Actuellement en pause.</p>
+                    <h3>Technologies : Java</h3>
+                    <h4>Contexte : Initiative personnelle</h4>
+                    <h5><a href="https://github.com/SachaBarbet/Hateful_Madness">Lien vers le projet</a></h5>
+                </li>
+            </ul>
         </section>
     </main>
     <script src="javascript/themes.js"></script>

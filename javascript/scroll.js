@@ -9,5 +9,4 @@ function runOnScroll(elements) {
 };
   
 const childElements = document.getElementsByTagName("section");
-
 window.addEventListener("scroll", () => runOnScroll(childElements));

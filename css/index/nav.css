@@ -28,12 +28,16 @@ nav ul li {
     text-align: right;
 }
 
-nav ul li a {
+.link {
     width: 100%;
     font-weight: 500;
     padding: 4%;
     border-right: 2px solid var(--color-main-02);
     cursor: pointer;
+}
+
+.link-selected {
+    color: var(--color-secondary-01);
 }
 
 nav ul li a:hover {
