@@ -1,0 +1,14 @@
+/*
+Theme : dark
+*/
+
+:root {
+    --color-main-01: #202020;
+    --color-main-02: #242424;
+    --color-main-03: #282828;
+    --color-secondary-01: #54ad42;
+    --color-secondary-02: #347726;
+    --color-background: var(--color-main-03);
+    --color-font: #FEFEFE;
+    --filter: invert(8%) sepia(100%) saturate(0%) hue-rotate(340deg) brightness(95%) contrast(90%);
+}
