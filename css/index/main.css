@@ -5,7 +5,124 @@ Main
 main {
     position: absolute;
     width: calc(100% - var(--nav-width));
-    height: 200%;
+    height: 330%;
     margin-left: var(--nav-width);
+    margin-top: var(--header-height);
     z-index: 4;
+    flex-direction: column;
+}
+
+section {
+    flex: 1;
+}
+
+/*-Section profile-*/
+#section-profile {
+    justify-content: space-evenly;
+}
+
+#section-profile > * {
+    margin-bottom: 5%;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    flex: 1;
+    margin-left: 10%;
+}
+
+#title h1 {
+    font-size: 42px;
+    margin-bottom: 4%;
+}
+
+#button-contact span {
+    color: var(--color-main-01);
+    margin-inline: 2%;
+}
+
+#button-contact {
+    display: flex;
+    width: 75%;
+    padding: 2%;
+    text-align: center;
+    border: 2px solid var(--color-secondary-01);
+    background-color: var(--color-secondary-01);
+    border-radius: 4px;
+    box-shadow: 4px 4px 0px var(--color-secondary-02);
+}
+
+#button-contact p {
+    color: var(--color-main-01);
+    font-weight: 600;
+}
+
+#button-contact:hover, #button-contact:focus {
+    background-color: var(--color-main-01);
+    color: var(--color-secondary-01);
+    transform: translateY(-1px);
+    transform: translateX(-3px);
+    box-shadow: 6px 6px 0px var(--color-secondary-02);
+}
+
+#button-contact:hover span, #button-contact:focus span, #button-contact:hover p, #button-contact:focus p {
+    color: var(--color-secondary-01);
+}
+
+#button-contact:active {
+    transform: translateY(3px);
+    transform: translateX(1px);
+    background-color: var(--color-background);
+    box-shadow: 2px 2px 0px var(--color-secondary-02);
+}
+
+p {
+    flex: 1;
+    width: 39%;
+    font-size: large;
+    margin-right: 10%;
+}
+
+
+/*-Section-experience-*/
+#section-experience {
+    flex-direction: column;
+}
+
+#section-experience div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section-experience article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-top: 8%;
+    padding-inline: 5%;
+}
+
+#section-experience article h2 {
+    margin-bottom: 5%;
+}
+
+#section-experience article ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#section-experience article ul li {
+    margin-block: 4%;
+}
+
+#section-experience article ul li p {
+    width: 100%;
+    font-size: 16px;
+    padding-block: 1%;
 }

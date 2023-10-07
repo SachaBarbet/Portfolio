@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <link rel="shortcut icon" href="assets/images/shaped_profil.png" type="image/x-icon">
+
     <link rel="stylesheet" id="css-theme" href="">
     <link rel="stylesheet" href="css/index.css">
 
@@ -13,7 +15,7 @@
 </head>
 <body>
     <header>
-        <div id="media-icons" class="center">
+        <div id="media-icons" class="center flex-start">
             <a href="https://www.linkedin.com/in/sacha-barbet-8b6ab6219/" target="_blank" rel="noopener noreferrer"><img src="./assets/images/linkedin_bleu.png" alt="LinkedIn"></a>
             <a href="https://github.com/SachaBarbet" target="_blank" rel="noopener noreferrer"><img src="./assets/images/github.png" alt="Github" id="icon-github"></a>
             <a href="mailto:sacha.barbet@gmail.com" target="_blank" rel="noopener noreferrer"><img src="./assets/images/gmail.png" alt="Mail" /></a>
@@ -23,11 +25,8 @@
             <a href="./assets/documents/Curriculum Vitae - Barbet Sacha.pdf" target="_blank" rel="noopener noreferrer" class="link-strong">
                 <span class="material-symbols-outlined">download</span>Curriculum Vitae</a>
 
-            <div id="box-theme">
-                <label>
-                    <input title="Select the color template" type="checkbox" id="themeSwitchInput" onclick="switchTheme();">
-                    <span id="switch-slider"></span>
-                </label>
+            <div id="box-theme" class="center flex-end">
+                <img src="assets/images/" alt="Theme Icon" thememode="" id="themeSwitchInput" onclick="clickThemeIcon();">
             </div>
         </div>
     </header>
@@ -35,26 +34,85 @@
     <nav>
         <div></div>
         <ul>
-            <li>ACCUEIL</li>
-            <li>MON PARCOURS</li>
-            <li>MES PROJETS</li>
+            <li><a href="#" class="link" id="link-profile">ACCUEIL</a></li>
+            <li><a href="#section-experience" class="link" id="link-experience">MON PARCOURS</a></li>
+            <li><a href="#section-projects" class="link" id="link-projects">MES PROJETS</a></li>
         </ul>
         <div></div>
     </nav>
 
-    <main>
-        <section id="section-profile">
+    <main class="center">
+        <section id="section-profile" class="center">
+            <div id="title">
+                <h2>Bonjour,</h2>
+                <h1>Je m'appelle <strong>Sacha</strong></h1>
+                <a href="mailto:sacha.barbet@gmail.com" id="button-contact" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">mail</span><p>CONTACTEZ-MOI</p></a>
+            </div>
 
+            <div class="vertical-separator"></div>
+
+            <p>Bienvenue sur mon portfolio !<br>
+                Vous trouverez diverses informations ici me concernant, notamment mon statut actuel et mon parcours professionnel, que vous pouvez découvrir dans la section dédiée.<br>
+                De plus, vous pourrez explorer mes compétences et ma détermination à travers les projets que j'ai réalisé.
+            </p>
         </section>
 
-        <section id="section-experience">
+        <div class="horizontal-separator"></div>
 
+        <section id="section-experience" class="center">
+            <h1>MON PARCOURS</h1>
+            <div>
+                <article>
+                    <h2>Parcours professionnel</h2>
+                    <ul>
+                        <li>
+                            <h4>Apside - Développeur Informatique ( En cours )</h4>
+                            <p>Développement mobile et logiciel - Réalisation de cahier des charges selon la demande des clients.</p>
+                            <h5>Alternance 3 ans / 2023-2026 / Lyon</h5>
+                        </li>
+    
+                        <li>
+                            <h4>Mobidecor - Technicien Informatique</h4>
+                            <p>Gestion de projets (Installation réseaux vidéo surveillance) - Automatisation de tâches (Python, langages systèmes).</p>
+                            <h5>Alternance 2 ans / 2021-2023 / Mâcon</h5>
+                        </li>
+                    </ul>
+                </article>
+    
+                <article>
+                    <h2>Parcours académique</h2>
+                    <ul>
+                        <li>
+                            <h4>Ynov Campus - Mastère Informatique ( À venir )</h4>
+                            <p>Logiciel ou Web</p>
+                            <h5>Alternance 2 ans / 2024-2026 / Lyon</h5>
+                        </li>
+
+                        <li>
+                            <h4>Ynov Campus - Bachelor Informatique ( En cours )</h4>
+                            <p>Apprentissage et gain d'expérience à travers des projets réaliser en groupe.</p>
+                            <h5>Alternance 1 ans / 2023-2024 / Lyon</h5>
+                        </li>
+
+                        <li>
+                            <h4>Dijon Formation - BTS SIO Option B</h4>
+                            <p>Apprentissage des bases de l'informatique ainsi que des premiers langages de programmation. Notamment certaines notions comme la POO ou la gestion de BDD.</p>
+                            <h5>Alternance 2 ans / 2021-2023 / Dijon</h5>
+                        </li>
+                    </ul>
+                </article>
+            </div>
         </section>
 
-        <section id="section-projects">
+        <div class="horizontal-separator"></div>
 
+        <section id="section-projects" class="center">
+            <h1>MES PROJETS</h1>
+            
         </section>
     </main>
     <script src="javascript/themes.js"></script>
+    <script src="javascript/link.js"></script>
+    <script src="javascript/scroll.js"></script>
 </body>
 </html>

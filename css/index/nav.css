@@ -24,17 +24,21 @@ nav ul {
 }
 
 nav ul li {
-    text-align: right;
     width: 75%;
-    padding: 3%;
+    text-align: right;
+}
+
+nav ul li a {
+    width: 100%;
+    font-weight: 500;
+    padding: 4%;
     border-right: 2px solid var(--color-main-02);
     cursor: pointer;
 }
 
-nav ul li:hover {
-    border-right: 8px solid var(--color-secondary);
+nav ul li a:hover {
+    border-right: 6px solid var(--color-secondary-01);
 }
-
 
 nav div {
     flex: 2;
