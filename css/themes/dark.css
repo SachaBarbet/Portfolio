@@ -2,7 +2,7 @@
 Theme : dark
 */
 
-:root {
+html {
     --color-main-01: #202020;
     --color-main-02: #242424;
     --color-main-03: #282828;
